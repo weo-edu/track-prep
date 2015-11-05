@@ -3,11 +3,34 @@
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-Data processing util for segment.
+Data processing util for segment. Prepares data for use with analytics tools. Flatten nested properties and converts dates to seconds (intercom).
 
 ## Installation
 
     $ npm install track-data
+
+## Usage
+
+```js
+var prep = require('track-prp')
+var props = prep({
+  _id: 0,
+  displayName: 'foo',
+  nested: {
+    displayName: 'bar'
+  },
+  createdAt: 'Thu Nov 05 2015 14:30:11 GMT-0800 (PST)',
+  omit: 'qux'
+}, ['_id', 'displayName', 'nested', 'createdAt'])
+
+//props
+// {
+//  _id: 0,
+//  displayName: 'foo',
+//  'nested.displayName': 'bar',
+//  createdAt: 1446762611.134
+// }
+```
 
 ## License
 

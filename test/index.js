@@ -1,11 +1,11 @@
-var data = require('..')
+var prep = require('..')
 var assert = require('assert')
 
-describe('track-data', function () {
+describe('track-prep', function () {
 
   it('should prepare generic data', function () {
     var date = new Date()
-    var props = data.props({
+    var props = prep({
       _id: 0,
       displayName: 'foo',
       nested: {
@@ -26,7 +26,7 @@ describe('track-data', function () {
 
   it('should prepare user properties for tracking', function () {
     var date = new Date()
-    var props = data.user({
+    var props = prep.user({
       _id: 1,
       email: 'foo@gmail.com',
       displayName: 'foo',
@@ -61,7 +61,7 @@ describe('track-data', function () {
 
   it('should prepare activity properties for tracking', function () {
     var date = new Date()
-    var props = data.activity({
+    var props = prep.activity({
       _id: 2,
       shareType: 'sheet',
       title: 'woot',
@@ -90,7 +90,7 @@ describe('track-data', function () {
 
   it ('should prepare group for tracking', function () {
     var date = new Date()
-    var props = data.group({
+    var props = prep.group({
       _id: 3,
       displayName: '1st',
       createdAt: date,
