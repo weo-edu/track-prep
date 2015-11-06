@@ -57,7 +57,8 @@ describe('track-prep', function () {
       'userType': 'teacher',
       'email': 'foo@gmail.com',
       'createdAt': date / 1000,
-      'id': 1
+      'id': 1,
+      kind: 'user'
     }, props)
   })
 
@@ -86,7 +87,8 @@ describe('track-prep', function () {
       createdAt: date / 1000,
       'actor.displayName': 'foo',
       'actor._id': 1,
-      description: 'super cool activity'
+      description: 'super cool activity',
+      kind: 'share'
     }, props)
   })
 
@@ -107,7 +109,8 @@ describe('track-prep', function () {
       createdAt: date / 1000,
       groupType: 'class',
       'owners.0.displayName': 'foo',
-      'owners.0._id': 1
+      'owners.0._id': 1,
+      kind: 'group'
     }, props)
   })
 
