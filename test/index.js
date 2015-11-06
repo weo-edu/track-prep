@@ -57,7 +57,7 @@ describe('track-prep', function () {
       'userType': 'teacher',
       'email': 'foo@gmail.com',
       'createdAt': date / 1000,
-      '_id': 1
+      'id': 1
     }, props)
   })
 
@@ -80,7 +80,7 @@ describe('track-prep', function () {
     })
 
     assert.deepEqual({
-      _id: 2,
+      id: 2,
       displayName: 'woot',
       publishedAt: date / 1000,
       createdAt: date / 1000,
@@ -102,7 +102,7 @@ describe('track-prep', function () {
       status: 'active'
     })
     assert.deepEqual({
-      _id: 3,
+      id: 3,
       displayName: '1st',
       createdAt: date / 1000,
       groupType: 'class',
