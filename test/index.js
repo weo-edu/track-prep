@@ -51,6 +51,8 @@ describe('track-prep', function () {
       'name.givenName': 'foo',
       'name.familyName': 'bar',
       'name.honorificPrefix': 'Mr.',
+      'firstName': 'foo',
+      'lastName': 'bar',
       'username': 'foobar2',
       'userType': 'teacher',
       'email': 'foo@gmail.com',

@@ -1,5 +1,5 @@
 
-# track-data
+# track-prep
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
@@ -23,7 +23,7 @@ var props = prep({
   omit: 'qux'
 }, ['_id', 'displayName', 'nested', 'createdAt'])
 
-//props
+// props:
 // {
 //  _id: 0,
 //  displayName: 'foo',
