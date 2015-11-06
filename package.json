@@ -2,7 +2,7 @@
   "name": "track-prep",
   "description": "Data processing util for segment.",
   "repository": "git://github.com/weo-edu/track-prep.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
