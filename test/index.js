@@ -43,7 +43,9 @@ describe('track-prep', function () {
       },
       username: 'foobar2',
       userType: 'teacher',
-      createdAt: date
+      createdAt: date,
+      gradeLevels: ['4th', '5th'],
+      subjects: ['math', 'algebra']
     })
 
     assert.deepEqual({
@@ -58,7 +60,9 @@ describe('track-prep', function () {
       'email': 'foo@gmail.com',
       'createdAt': date / 1000,
       'id': 1,
-      kind: 'user'
+      kind: 'user',
+      gradeLevels: '4th,5th',
+      subjects: 'math,algebra'
     }, props)
   })
 
