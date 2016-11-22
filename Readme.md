@@ -7,12 +7,12 @@ Data processing util for segment. Prepares data for use with analytics tools. Fl
 
 ## Installation
 
-    $ npm install track-data
+    $ npm install track-prep
 
 ## Usage
 
 ```js
-var prep = require('track-prp')
+var prep = require('track-prep')
 var props = prep({
   _id: 0,
   displayName: 'foo',
